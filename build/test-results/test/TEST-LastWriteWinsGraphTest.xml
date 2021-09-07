@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="LastWriteWinsGraphTest" tests="31" skipped="0" failures="0" errors="0" timestamp="2021-05-09T09:33:52" hostname="DESKTOP-V8D5O2F" time="0.29">
+  <properties/>
+  <testcase name="when two operations with same time are received, the first one takes priority()" classname="LastWriteWinsGraphTest" time="0.063"/>
+  <testcase name="addVertex() - trivial add and check if exists in graph()" classname="LastWriteWinsGraphTest" time="0.002"/>
+  <testcase name="addVertex() - updates epochtime if adding same vertex twice()" classname="LastWriteWinsGraphTest" time="0.004"/>
+  <testcase name="add and remove added vertex and check if vertex exists in graph()" classname="LastWriteWinsGraphTest" time="0.004"/>
+  <testcase name="getAllVertices() - returns empty if graph is empty()" classname="LastWriteWinsGraphTest" time="0.005"/>
+  <testcase name="merge() - can merge with empty graph()" classname="LastWriteWinsGraphTest" time="0.025"/>
+  <testcase name="findPath() - when operations were received out of order, returns expected path list()" classname="LastWriteWinsGraphTest" time="0.003"/>
+  <testcase name="findPath() - returns list of vertices in path to reach a vertex()" classname="LastWriteWinsGraphTest" time="0.002"/>
+  <testcase name="removeVertex() - add vertex and remove added vertex and check if value exists in graph()" classname="LastWriteWinsGraphTest" time="0.001"/>
+  <testcase name="removeVertex() - when two remove operations are received, the latest timestamp operation wins()" classname="LastWriteWinsGraphTest" time="0.002"/>
+  <testcase name="merge() - throws an error if not same graph type()" classname="LastWriteWinsGraphTest" time="0.082"/>
+  <testcase name="removeEdge() - remove edge between existing vertices when operations are out of order()" classname="LastWriteWinsGraphTest" time="0.003"/>
+  <testcase name="addVertex() - an old vertex operation cannot overwrite a newer vertex()" classname="LastWriteWinsGraphTest" time="0.003"/>
+  <testcase name="getAllVertices() - given an empty graph with an added edge, should return empty()" classname="LastWriteWinsGraphTest" time="0.003"/>
+  <testcase name="findPath() - when a vertex is removed and no path exists, returns empty list()" classname="LastWriteWinsGraphTest" time="0.003"/>
+  <testcase name="given a vertex has been removed, a new added vertex can exist with same value()" classname="LastWriteWinsGraphTest" time="0.002"/>
+  <testcase name="merge() - can merge a graph with target graph for adding a vertex()" classname="LastWriteWinsGraphTest" time="0.001"/>
+  <testcase name="addEdge() - updates edge timestamp when two edges are added out of order()" classname="LastWriteWinsGraphTest" time="0.001"/>
+  <testcase name="removeEdge() - when two remove edge operations are received, latest one wins()" classname="LastWriteWinsGraphTest" time="0.002"/>
+  <testcase name="getAllConnectedVertices() - returns list of all vertices connect to a vertex()" classname="LastWriteWinsGraphTest" time="0.001"/>
+  <testcase name="exists() - return false if vertex does not exists in graph()" classname="LastWriteWinsGraphTest" time="0.001"/>
+  <testcase name="findPath() - returns list when the first edge is the target vertex()" classname="LastWriteWinsGraphTest" time="0.002"/>
+  <testcase name="removeVertex() - given a vertex exists, can remove vertex()" classname="LastWriteWinsGraphTest" time="0.004"/>
+  <testcase name="addVertex() - add same vertex twice but keeps the one with latest time()" classname="LastWriteWinsGraphTest" time="0.004"/>
+  <testcase name="addEdge() - updates edge epoch time if edge is added and edge direction is reversed()" classname="LastWriteWinsGraphTest" time="0.005"/>
+  <testcase name="getAllConnectedVertices() - returns empty if no vertices found()" classname="LastWriteWinsGraphTest" time="0.002"/>
+  <testcase name="getAllVertices() - returns list of vertices in graph()" classname="LastWriteWinsGraphTest" time="0.002"/>
+  <testcase name="addEdge() - add edge between existing vertices()" classname="LastWriteWinsGraphTest" time="0.002"/>
+  <testcase name="exists() - return true if vertex exists in graph()" classname="LastWriteWinsGraphTest" time="0.001"/>
+  <testcase name="findPath() - returns list of vertices in path to reach a vertex, not shortest one proved()" classname="LastWriteWinsGraphTest" time="0.002"/>
+  <testcase name="merge() - can merge a graph with target graph for adding an  edge()" classname="LastWriteWinsGraphTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
